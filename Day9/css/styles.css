@@ -1,0 +1,125 @@
+:root {
+    --clr-Red: hsl(1, 90%, 64%);
+    --clr-Green: hsl(150, 100%, 38%);
+    --clr-bg: rgb(4, 0, 27);
+    --clr-form-bg: rgba(255, 255, 255, 0.1);
+    --clr-white: rgba(255, 255, 255, 0.5);
+    --clr-black: black;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    cursor: default;
+    background-color: var(--clr-bg);
+    min-height: 100vh;
+    color: rgba(255, 255, 255, 0.801);
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.top-container {
+    position: relative;
+    transform: translateY(10rem);
+    width: 100%;
+    max-width: 24rem;
+    margin: auto;
+}
+
+form {
+    background-color: var(--clr-form-bg);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 1.5rem;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 100;
+}
+
+.input-wrapper {
+    margin-bottom: 1.5rem;
+    position: relative;
+    height: 2.5rem;
+}
+
+.input {
+    background-color: var(--clr-white);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 0 .5rem;
+    height: 100%;
+    width: 100%;
+    outline: none;
+}
+
+.input:focus,
+.input:hover,
+.input:not(:placeholder-shown).input:not(:focus) {
+    border: 2px solid var(--clr-Green);
+}
+
+.label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 0.7rem;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+}
+
+.input:focus~.label,
+.input:not(:placeholder-shown).input:not(:focus)~.label {
+    top: -5%;
+    font-size: 0.8rem;
+    background-color: var(--clr-Green);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 0.2rem 0.3rem;
+    line-height: 100%;
+}
+
+button{
+    background: linear-gradient(to right, rgb(102, 255, 0), rgb(0, 204, 255),rgb(255, 0, 170), rgb(255, 187, 0));
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    height: 2.5rem;
+    width: 100%;
+    max-width: 50%;
+    color: white;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    letter-spacing: 2px;
+    max-width: 55%;
+}
+
+.top-container::after,
+.top-container::before {
+    content: "";
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.top-container::after {
+    top: -5rem;
+    right: 0;
+    background: linear-gradient(rgb(102, 255, 0), rgb(0, 204, 255));
+}
+
+.top-container::before {
+    bottom: -5rem;
+    left: 0;
+    background: linear-gradient(rgb(255, 0, 170), rgb(255, 187, 0));
+}

@@ -1,0 +1,110 @@
+ body {
+     box-sizing: border-box;
+ }
+
+ .section {
+     padding: 40px;
+     background-image: linear-gradient(#11223391, #1122338f), url(1.jpg);
+     background-size: cover;
+     background-position: center center;
+ }
+
+ #amarblock {
+     background: transparent;
+     width: 350px;
+     padding: 8px;
+     margin: auto;
+     color: #ddd;
+     border-radius: 13px;
+     box-shadow: -1px 1px 4px #eee, 0px -1px 7px #eee;
+ }
+
+ .signuptitle h2 {
+     padding: 10px;
+     color: white;
+     font-family: arial black;
+     text-align: center;
+     position: relative;
+ }
+
+ .signuptitle h2::after {
+     content: "";
+     position: absolute;
+     left: 30%;
+     top: 87%;
+     width: 140px;
+     height: 4px;
+     background: #eee;
+ }
+
+ .signuptitle h2::before {
+     content: "";
+     position: absolute;
+     left: 48%;
+     top: 79%;
+     width: 13px;
+     height: 10px;
+     background: #00BCD4;
+     z-index: 999;
+     border: 2px solid #123;
+ }
+
+ #inputfield input {
+     margin: 0px 74px;
+     padding: 10px 10px;
+     border: 1px solid #ddd;
+     border-radius: 23px;
+ }
+
+ #inputfield input:focus {
+     background: #49dbfc;
+     border-radius: 23px;
+ }
+
+ .signuptitle {
+     font-size: 20px;
+ }
+
+ .select {
+     padding: 6px;
+     margin: 20px 73px;
+ }
+
+ select {
+     border: 1px solid red;
+     padding: 4px;
+     background: #ffadd4f2;
+     border-radius: 20px;
+ }
+
+ .select option {
+     padding: 17px 80px;
+ }
+
+ .gender {
+     margin-left: 10px;
+ }
+
+ .hobbies {
+     padding: 10px;
+ }
+
+ .hobbies input[type="checkbox"] {
+     margin: 7px;
+ }
+
+ .submitButton input {
+     background: #03A9F4;
+     color: white;
+     padding: 8px;
+     text-align: center;
+     width: 100%;
+     border: 1px solid #0d2d3c;
+     border-radius: 5px;
+ }
+
+ #inputfield {
+     width: 100%;
+     padding: 8px;
+     display: block;
+ }

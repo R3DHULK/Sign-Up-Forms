@@ -1,0 +1,154 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+body {
+    background:url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.100);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    max-width: 500px;
+    width: 50%;
+    padding: 50px 25px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+
+form h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    background-image: linear-gradient(90deg,
+    #b84196 0%,
+    #a376c2 30%,
+    #619194 70%,
+    #1d705b 90%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;}
+ 
+
+form input[type=email], form input[type=password] {
+     width: 100%;
+     height: 45px;
+     border: 1px solid #ccc;
+     padding-left: 10px;
+     margin: 10px 0;
+     border-radius: 25px;
+     outline: 0;
+ }
+
+form input[type=submit], .button-email {
+     width:  100%;
+     height: 40px;
+     cursor: pointer;
+     background: #271430;
+     color: white;
+     border: 0;
+     border-radius: 25px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     font-size: 14px;
+ }
+
+form input[type=submit]:hover, .button-email:hover {
+    background-color: #371b44;
+}
+
+form a, p, label {  
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    margin-top: 0.4rem;
+    margin-bottom: 35px;
+}
+
+.p {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+
+.hr {   
+    border: 0;
+    height: 2px;    
+    background-image: linear-gradient(to right, transparent, #CCC, transparent); 
+}
+
+.buttom {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    color: #000;
+    width:  100%;
+    height: 40px;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+    opacity: 1; 
+}
+
+.buttom:hover {opacity: 0.8}
+
+.button-google {
+    background-image: url('../img/google.png');
+    background-repeat: no-repeat;
+    background-position: 4%;
+}
+
+.button-face {
+    background-image: url('../img/facebook.png');
+    background-repeat: no-repeat;
+    background-position: 4%;
+
+}
+.half-box, .password {
+    flex: 1 1 45%;
+    position: relative;
+    
+}
+.spacing {
+    margin-right: 2.5%;
+}
+@media (max-width: 678px)
+{
+    form
+    {
+        height: 90%;
+    }
+}
+@media (max-width: 680px)
+{
+    form input[type=email], form input[type=password], form input[type=submit]
+    {
+        margin-top: 10px;
+        height: 30px;
+    }
+    form 
+    {
+        width: 70%;
+        max-width: 400px;
+        height: 80%;
+        padding: 15px 25px;
+    }
+    .buttom, form input
+    {
+        margin-top: 15px;
+        height: 30px;
+    }
+}
